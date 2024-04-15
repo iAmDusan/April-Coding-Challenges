@@ -1,0 +1,52 @@
+# Ignore IDE/Editor-specific files
+.vscode/
+.idea/
+*.idea/
+.DS_Store
+
+# Ignore compiled code
+*.exe
+*.o
+*.so
+*.dll
+*.class
+
+# Ignore virtual environment
+venv/
+env/
+virtualenv/
+*.env/
+
+# Ignore dependency directories
+node_modules/
+vendor/
+
+# Ignore temporary files
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore sensitive information
+# Add specific files containing sensitive information here
+
+# Ignore logs and output
+*.log
+build/
+dist/
+__pycache__/
+
+# Ignore user-specific files
+.bash_history
+.bashrc
+.profile
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore documentation and artifacts
+*.html
+*.pdf
+*.docx

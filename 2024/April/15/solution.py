@@ -1,3 +1,35 @@
+"""
+Numerical Encoding Approach (using *10):
+
+- In this approach, each node's value is treated as a digit, and as we traverse down the tree, we form numbers by concatenating these digits based on their positions.
+- Multiplying by 10 ensures that each level of the tree contributes to a different place value in the formed number. This allows us to correctly represent multi-digit numbers along the root-to-leaf paths.
+- This approach is commonly used when the tree's structure carries numerical significance, such as when each root-to-leaf path represents a number.
+
+For example:
+      1
+     / \
+    2   3
+
+- Root-to-leaf path 1 -> 2 represents the number 12.
+- Root-to-leaf path 1 -> 3 represents the number 13.
+
+Simple Addition Approach (not using *10):
+
+- In this approach, each node's value is simply added to the current sum without considering its position in the formed number.
+- The resulting sum represents the accumulation of values along the paths but does not encode the numbers in a structured way based on the tree's hierarchy.
+- This approach might be used when the numerical significance of the tree's structure is not relevant or when the goal is simply to accumulate values along the paths without forming numbers.
+
+For example:
+      1
+     / \
+    2   3
+
+- Root-to-leaf path 1 -> 2 contributes to the sum as 3.
+- Root-to-leaf path 1 -> 3 contributes to the sum as 4.
+"""
+
+
+
 class TreeNode:
     """ Definition of a binary tree node. """
     def __init__(self, val=0, left=None, right=None):
