@@ -1,0 +1,5 @@
+Input: [1,2,3] 
+Expected Output: 25
+
+Input: [4,9,0,5,1]
+Expected Output: 1026 
